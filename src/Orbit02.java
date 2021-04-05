@@ -181,7 +181,7 @@ class PaintComponent extends JPanel {
 		double dx = star.x - object.x;
 		double dy = star.y - object.y;
 		double k = Math.sqrt(star.m / Math.pow(distance(star, object), 3));
-		k*=(rand.nextDouble()*0.2*(Math.sqrt(2)-1)+1);
+		k*=(rand.nextDouble()*0.1*(Math.sqrt(2)-1)+1); 
 		
 		Vector velocity = new Vector(-k * dy, k * dx);
 		return velocity;
